@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChinhSuaKhoanVay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSoTienVay"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="     Số tiền"
+                android:textColor="#51C6B9"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etSoTienVay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="     Ngày vay"
+                android:textColor="#51C6B9"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvNgayVay"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnChonNgayVay"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="..." />
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="     Ngày trả"
+                android:textColor="#51C6B9"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvNgayTra"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnChonNgayTraVay"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="..." />
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvGhiChuVay"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="     Ghi chú"
+                android:textColor="#51C6B9"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etGhiChuVay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnThemVay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F3B0B0"
+                android:text="Thêm" />
+            <View
+                android:layout_width="20dp"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/btnXoaVay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#BBEC85"
+                android:text="Xóa" />
+            <View
+                android:id="@+id/view11"
+                android:layout_width="20dp"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/btnLuuVay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F6B2FD"
+                android:text="Lưu" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

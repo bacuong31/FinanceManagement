@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+             />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTongTien"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:lineSpacingExtra="12sp"
+                android:text="  Tổng tiền"
+                android:textColor="#F44336"
+                android:textSize="30sp"
+                android:typeface="sans"
+                app:fontFamily="serif" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDaChi"
+                android:layout_width="366dp"
+                android:layout_height="50dp"
+                android:lineSpacingExtra="12sp"
+                android:text="  Đã chi"
+                android:textColor="#3F51B5"
+                android:textSize="30sp"
+                android:typeface="sans"
+                app:fontFamily="serif" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4BC3A5"
+                    android:onClick="btnThuNhapOnClick"
+                    android:text="Thu nhập"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4B93C3"
+                    android:onClick="btnChiTieuOnClick"
+                    android:text="Chi tiêu"
+                    android:textSize="20dp" />
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#83C34B"
+                    android:onClick="btnQuanLySoOnClick"
+                    android:text="Quản lý sổ"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4B57C3"
+                    android:onClick="btnChoVayOnClick"
+                    android:text="Cho vay"
+                    android:textSize="20dp" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="#C3B34B"
+                    android:onClick="btnMuonNoOnClick"
+                    android:text="Mượn nợ"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btnThongKe"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="#794BC3"
+                    android:text="Thống kê"
+                    android:textSize="20dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

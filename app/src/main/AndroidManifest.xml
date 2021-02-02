@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.financemanager">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Finance manager"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ChiTietThongKe"
+            android:label="@string/title_activity_chi_tiet_thong_ke"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".ThemTienVaoSo"
+            android:label="@string/title_activity_them_tien_vao_so"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChinhSuaSo"
+            android:label="@string/title_activity_chinh_sua_so"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChinhSuaKhoanNo"
+            android:label="@string/title_activity_chinh_sua_khoan_no"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChinhSuaKhoanVay"
+            android:label="@string/title_activity_chinh_sua_khoan_vay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChinhSuaKhoanChi"
+            android:label="@string/title_activity_chinh_sua_khoan_chi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChinhSuaKhoanThu"
+            android:label="@string/title_activity_chinh_sua_khoan_thu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChiTietVay"
+            android:label="@string/title_activity_chi_tiet_vay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChiTietNo"
+            android:label="@string/title_activity_chi_tiet_no"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuanLySo"
+            android:label="@string/title_activity_quan_ly_so"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <receiver android:name=".FMNotification" />
+        <activity
+            android:name=".ChiTietKhoanChi"
+            android:label="@string/title_activity_chi_tiet_khoan_chi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChiTietThu"
+            android:label="@string/title_activity_chi_tiet_thu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
